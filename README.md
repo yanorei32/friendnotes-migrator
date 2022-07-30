@@ -1,6 +1,6 @@
 # FriendNotes Migrator
 
-Migrator from markviews/FriendNotes to VRChat UserNotes.
+Migrator from [markviews/FriendNotes](https://github.com/markviews/FriendNotes) to VRChat UserNotes.
 
 WARNING: This application will **OVERWRITE** VRChat UserNotes by markviews/FriendNotes's values.
 
