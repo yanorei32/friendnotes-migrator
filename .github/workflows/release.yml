@@ -31,6 +31,16 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           args: --all-features
 
+      - name: compile for unit test
+        uses: actions-rs/cargo@v1.0.3
+        with:
+          command: test
+          args: --no-run --locked
+
+      - name: unit test
+        uses: actions-rs/cargo@v1.0.3
+        with:
+          command: test
 
       - uses: actions-rs/cargo@v1.0.3
         with:
@@ -43,7 +53,7 @@ jobs:
           args: --release --target stable-x86_64-pc-windows-gnu↵
 
       - name: pre-release
-        uses: marvinpinto/action-automatic-releases@v1
+        uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
