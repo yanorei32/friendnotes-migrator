@@ -1,3 +1,5 @@
+#![warn(clippy::pedantic, clippy::nursery)]
+
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use std::env;
@@ -22,7 +24,7 @@ struct UNReq {
 fn main() {
     let mut args: Vec<String> = env::args().collect();
 
-    let _ = args.remove(0);
+    args.remove(0);
 
     if args.len() != 2 {
         eprintln!("Usage: friendnotes-migrator [authcookie] [JSON file]");
@@ -56,7 +58,7 @@ fn main() {
             "Process ({}/{}) remaining {}min: {}: {}",
             i + 1,
             note_count,
-            note_count / 2,
+            (note_count - i) / 2,
             uuid,
             note
         );
