@@ -60,7 +60,7 @@ jobs:
       - uses: actions-rs/cargo@v1.0.3
         with:
           command: build
-          args: --release --target stable-x86_64-pc-windows-gnu
+          args: --release --target x86_64-pc-windows-gnu
 
       - name: pre-release
         uses: marvinpinto/action-automatic-releases@latest
