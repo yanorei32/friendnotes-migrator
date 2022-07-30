@@ -18,7 +18,7 @@ jobs:
       - uses: awalsh128/cache-apt-pkgs-action@v1
         with:
           packages: musl-tools gcc-mingw-w64-x86-64 # provides musl-gcc
-          version: 1.0
+          version: 2.0
 
       - uses: actions-rs/toolchain@v1.0.7
         with:
