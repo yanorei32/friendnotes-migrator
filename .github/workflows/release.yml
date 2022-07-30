@@ -20,7 +20,7 @@ jobs:
           toolchain: stable
           components: clippy
           override: true
-          target: stable-pc-windows-gnu
+          target: x86_64-unknown-linux-musl
 
       - name: cache dependencies
         uses: Swatinem/rust-cache@v2.0.0
