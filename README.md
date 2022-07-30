@@ -4,7 +4,7 @@ Migrator from markviews/FriendNotes to VRChat UserNotes.
 
 WARNING: This application will **OVERWRITE** VRChat UserNotes by markviews/FriendNotes's values.
 
-![image](https://user-images.githubusercontent.com/11992915/181879703-7ffbc939-dfc5-4099-8def-3e1ecee0fc01.png)
+![image](https://user-images.githubusercontent.com/11992915/181879774-f33a3d1f-f5ac-407a-8416-effb8699e368.png)
 
 ## Linux
 
