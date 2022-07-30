@@ -30,7 +30,7 @@ jobs:
       - uses: actions-rs/toolchain@v1.0.7
         with:
           toolchain: stable
-          target: stable-x86_64-pc-windows-gnu
+          target: x86_64-pc-windows-gnu
 
       - name: cache dependencies
         uses: Swatinem/rust-cache@v2.0.0
@@ -60,7 +60,7 @@ jobs:
       - uses: actions-rs/cargo@v1.0.3
         with:
           command: build
-          args: --release --target stable-x86_64-pc-windows-gnu↵
+          args: --release --target stable-x86_64-pc-windows-gnu
 
       - name: pre-release
         uses: marvinpinto/action-automatic-releases@latest
