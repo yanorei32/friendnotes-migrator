@@ -4,7 +4,7 @@ Migrator from [markviews/FriendNotes](https://github.com/markviews/FriendNotes) 
 
 WARNING: This application will **OVERWRITE** VRChat UserNotes by markviews/FriendNotes's values.
 
-The current version migrates notes only. You can send an Issue if you need more columns.
+The current version migrates notes only. You can send an Issue if you need more informations.
 
 ![image](https://user-images.githubusercontent.com/11992915/181879774-f33a3d1f-f5ac-407a-8416-effb8699e368.png)
 
