@@ -71,8 +71,8 @@ fn main() {
         let resp = reqwest::blocking::Client::new()
             .post("https://vrchat.com/api/1/userNotes?apiKey=JlE5Jldo5Jibnk5O5hTx6XVqsJu4WJ26")
             .json(&req)
-            .header(reqwest::header::USER_AGENT, "friendnotes-migrator 1.0")
-            .header(reqwest::header::COOKIE, format!("auth={}", auth))
+            .header(reqwest::header::USER_AGENT, "friendnotes-migrator/1.0 https://github.com/yanorei32/friendnotes-migrator/issues")
+            .header(reqwest::header::COOKIE, format!("auth={auth}"))
             .send()
             .expect("Failed to send request");
 
