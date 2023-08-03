@@ -1,3 +1,8 @@
+# !!! PROJECT IS DEPRECATED !!!
+I stopped maintain this project.
+
+But latest build is ***maybe works***.
+
 # FriendNotes Migrator
 
 Migrator from [markviews/FriendNotes](https://github.com/markviews/FriendNotes) to VRChat UserNotes.
